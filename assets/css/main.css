@@ -51,6 +51,10 @@ table {
 	border-spacing: 0;
 }
 
+.home{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 .in-flex{
 	flex: 1;
@@ -62,9 +66,10 @@ table {
 }
 
 .imgRedonda {
-	height: 300px;
-    border-radius:50px;
-	padding-top: 18px;
+	width:300px;
+    height:300px;
+    border-radius:150px;
+	padding-top: 22px;
 	padding-bottom: 18px;
 }
 

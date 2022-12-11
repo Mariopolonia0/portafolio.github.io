@@ -51,8 +51,15 @@ table {
 	border-spacing: 0;
 }
 
+.in-flex{
+	flex: 1;
+}
+
+.in-flex:first-child{
+	flex: 2;
+}
+
 .imgRedonda {
-	
 	width:300px;
     height:300px;
     border-radius:150px;

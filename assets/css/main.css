@@ -136,12 +136,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*cosas agregada *******************************************************/
+
+.section-class {
+	padding: 1%;
+    width: 100%;
+    line-height: 1.1em;
+}
 
 .img_icon {
-	width: 18%;
-	height: 18%;
-	padding-left: 5%;
-	padding-right: 5%;
+	width: 50vw;
+	max-width: 18%;
+	max-height: 18%;
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
 .img_inicio {
@@ -156,6 +164,56 @@ table {
 	min-width: 130px;
 	margin: auto;
 	padding-bottom: 20px;
+}
+
+.img_vacia{
+	max-width: 0%;
+	min-width: 0%;
+}
+
+.section_padding{
+	padding: 1em;
+}
+
+
+.section-class:nth-child(1) {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+.section-class:nth-child(2) {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.section-class:nth-child(3) {
+	background-color: rgba(0, 0, 0, 0.225);
+}
+
+.section-class:nth-child(4) {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section-class:nth-child(5) {
+	background-color: rgba(0, 0, 0, 0.375);
+}
+
+.section-class:nth-child(6) {
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
+.section-class:nth-child(7) {
+	background-color: rgba(0, 0, 0, 0.525);
+}
+
+.section-class:nth-child(8) {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section-class:nth-child(9) {
+	background-color: rgba(0, 0, 0, 0.675);
+}
+
+.section-class:nth-child(10) {
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -286,7 +344,7 @@ i {
 }
 
 p {
-	margin: 0 0 2em 0;
+	margin: 0 0 0 0;
 }
 
 h1,
@@ -2850,6 +2908,8 @@ button:disabled,
 	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
 }
+
+
 
 .spotlight:nth-child(1) {
 	background-color: rgba(0, 0, 0, 0.075);

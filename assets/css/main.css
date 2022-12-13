@@ -136,12 +136,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*cosas agregada *******************************************************/
 
 .section-class {
 	padding: 1%;
-    width: 100%;
-    line-height: 1.1em;
+	width: 100%;
+	line-height: 1.1em;
 }
 
 .img_icon {
@@ -152,11 +153,42 @@ table {
 	padding-right: 4%;
 }
 
+.tarjeta {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	border-radius: 15px;
+	margin: 3%;
+	border: 1px solid;
+}
+
+letraTituloCard {
+	padding: 2%;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16vm;
+}
+
+letraContenidoCard {
+	padding: 2%;
+	color: #fff;
+	font-weight: 200;
+}
+
+
 .img_inicio {
-	width: 100%;
+	width: 90%;
 	border-radius: 15px;
 	box-shadow: 3px 6px 10px rgba(205, 205, 205, 0.735);
 }
+
+.ulTema {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2e3842;
+}
+
 
 .container {
 	width: 75vw;
@@ -164,56 +196,28 @@ table {
 	min-width: 130px;
 	margin: auto;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
-.img_vacia{
+tituloEducacion {
+	font-weight: 600;
+	font-size: 4vw;
+}
+
+.containerTituloEducacion{
+	padding-top: 2vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.img_vacia {
 	max-width: 0%;
 	min-width: 0%;
 }
 
-.section_padding{
+.section_padding {
 	padding: 1em;
-}
-
-
-.section-class:nth-child(1) {
-	background-color: rgba(0, 0, 0, 0.075);
-}
-
-.section-class:nth-child(2) {
-	background-color: rgba(0, 0, 0, 0.15);
-}
-
-.section-class:nth-child(3) {
-	background-color: rgba(0, 0, 0, 0.225);
-}
-
-.section-class:nth-child(4) {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.section-class:nth-child(5) {
-	background-color: rgba(0, 0, 0, 0.375);
-}
-
-.section-class:nth-child(6) {
-	background-color: rgba(0, 0, 0, 0.45);
-}
-
-.section-class:nth-child(7) {
-	background-color: rgba(0, 0, 0, 0.525);
-}
-
-.section-class:nth-child(8) {
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-.section-class:nth-child(9) {
-	background-color: rgba(0, 0, 0, 0.675);
-}
-
-.section-class:nth-child(10) {
-	background-color: rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -2761,8 +2765,9 @@ button:disabled,
 	width: 100%;
 }
 
+
 .features li {
-	padding: 4em 4em 2em 6em;
+	padding: 2;
 	display: block;
 	position: relative;
 	text-align: left;

@@ -146,7 +146,7 @@ table {
 }
 
 .img_icon {
-	width: 50vw;
+	width: 80vw;
 	max-width: 18%;
 	max-height: 18%;
 	padding-left: 4%;
@@ -163,10 +163,14 @@ table {
 }
 
 letraTituloCard {
-	padding: 2%;
+	padding: 1%;
 	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
+}
+
+.divEstudio{
+	padding: 3%;
 }
 
 letraContenidoCard {
@@ -209,7 +213,6 @@ tituloEducacion {
 }
 
 .containerTituloEducacion{
-	padding-top: 2vw;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -3953,7 +3956,7 @@ body.is-menu-visible #menu {
 @media screen and (max-width: 736px) {
 
 	#banner {
-		padding: 7em 3em 5em 3em;
+		padding: 5em 3em 5em 3em;
 		height: auto;
 		min-height: 0;
 	}

@@ -194,6 +194,20 @@ letraContenidoCard {
 	box-shadow: 3px 6px 10px rgba(205, 205, 205, 0.735);
 }
 
+.divIconoEnlace{
+	display: flex;
+    grid-gap: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	align-items: center;
+}
+
+.img_IconoEnlace{
+	width: 30px;
+	height:30px ;
+	padding-left: 3%;
+}
+
 .ulTema {
 	list-style-type: none;
 	margin: 0;
@@ -215,6 +229,9 @@ letraContenidoCard {
 	width: 10%;
 	padding-right: 3%;
 }
+
+
+
 
 .divTemaInformacion {
 	display: flex;

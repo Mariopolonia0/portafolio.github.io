@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html,
 body,
@@ -333,6 +328,24 @@ textarea {
 
 /* Basic */
 
+/*AQUI SE AGREGAN LAS FUENTES */
+@font-face {
+    font-family: loveya;
+    src: url(font/LoveYa.ttf)
+}
+
+@font-face {
+    font-family: cabinRegular;
+    src: url(font/CabinSketch-Regular.ttf)
+}
+
+
+@font-face {
+    font-family: cabinBold;
+    src: url(font/CabinSketch-Bold.ttf)
+}
+
+
 @-ms-viewport {
 	width: device-width;
 }
@@ -436,6 +449,7 @@ i {
 
 p {
 	margin: 0 0 0 0;
+	font-family: loveya;
 }
 
 h1,
@@ -450,6 +464,7 @@ h6 {
 	line-height: 1em;
 	margin: 0 0 1em 0;
 	text-transform: uppercase;
+	font-family: cabinBold;
 }
 
 h1 a,

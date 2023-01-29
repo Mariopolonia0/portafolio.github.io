@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html,
 body,
@@ -333,6 +328,24 @@ textarea {
 
 /* Basic */
 
+/*AQUI SE AGREGAN LAS FUENTES */
+@font-face {
+    font-family: loveya;
+    src: url(font/LoveYa.ttf)
+}
+
+@font-face {
+    font-family: cabinRegular;
+    src: url(font/CabinSketch-Regular.ttf)
+}
+
+
+@font-face {
+    font-family: cabinBold;
+    src: url(font/CabinSketch-Bold.ttf)
+}
+
+
 @-ms-viewport {
 	width: device-width;
 }
@@ -436,6 +449,7 @@ i {
 
 p {
 	margin: 0 0 0 0;
+	font-family: loveya;
 }
 
 h1,
@@ -450,6 +464,7 @@ h6 {
 	line-height: 1em;
 	margin: 0 0 1em 0;
 	text-transform: uppercase;
+	font-family: cabinBold;
 }
 
 h1 a,
@@ -1370,113 +1385,6 @@ button:disabled,
 	padding: 0;
 	width: 100%;
 }
-
-
-/* .features li {
-	padding: 2;
-	display: block;
-	position: relative;
-	text-align: left;
-	width: 0%;
-} */
-
-/* .features li:nth-child(1) {
-	background-color: rgba(0, 0, 0, 0.035);
-} */
-/* 
-.features li:nth-child(2) {
-	background-color: rgba(0, 0, 0, 0.07);
-}
-
-.features li:nth-child(3) {
-	background-color: rgba(0, 0, 0, 0.105);
-}
-
-.features li:nth-child(4) {
-	background-color: rgba(0, 0, 0, 0.14);
-}
-
-.features li:nth-child(5) {
-	background-color: rgba(0, 0, 0, 0.175);
-}
-
-.features li:nth-child(6) {
-	background-color: rgba(0, 0, 0, 0.21);
-}
-
-.features li:nth-child(7) {
-	background-color: rgba(0, 0, 0, 0.245);
-}
-
-.features li:nth-child(8) {
-	background-color: rgba(0, 0, 0, 0.28);
-}
-
-.features li:nth-child(9) {
-	background-color: rgba(0, 0, 0, 0.315);
-}
-
-.features li:nth-child(10) {
-	background-color: rgba(0, 0, 0, 0.35);
-}
-
-/* .features li:before {
-	display: block;
-	color: #00ffcc;
-	position: absolute;
-	left: 1.75em;
-	top: 2.75em;
-	font-size: 1.5em;
-} */
-
-/* .features li:nth-child(1) {
-	border-top-left-radius: 3px;
-}
-
-.features li:nth-child(2) {
-	border-top-right-radius: 3px;
-}
-
-.features li:nth-last-child(1) {
-	border-bottom-right-radius: 3px;
-}
-
-.features li:nth-last-child(2) {
-	border-bottom-left-radius: 3px;
-} */
-
-/* @media screen and (max-width: 980px) {
-
-	.features li {
-		padding: 3em 2em 1em 2em;
-		text-align: center;
-	}
-
-	.features li:before {
-		left: 0;
-		margin: 0 0 1em 0;
-		position: relative;
-		top: 0;
-	}
-
-} */
-
-/* @media screen and (max-width: 736px) {
-
-	.features li {
-		padding: 3em 0 1em 0;
-		background-color: transparent !important;
-		border-top: solid 2px #fff;
-		width: 100%;
-	}
-
-	.features li:first-child {
-		border-top: 0;
-	}
-
-} */
-
-/* Spotlight */
 
 .spotlight {
 	-moz-align-items: center;

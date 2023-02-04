@@ -225,9 +225,6 @@ letraContenidoCard {
 	padding-right: 3%;
 }
 
-
-
-
 .divTemaInformacion {
 	display: flex;
     grid-gap: 0px;
@@ -250,6 +247,7 @@ letraContenidoCard {
 
 letraInformacion{
 	text-align: left;
+	font-weight: bold;
 }
 
 .ulTemaExperiencia {
@@ -361,7 +359,7 @@ html {
 } */
 
 body {
-	background: #2e3842;
+	background:#defdff;
 }
 
 body.is-preload *,
@@ -448,23 +446,9 @@ i {
 }
 
 p {
-	margin: 0 0 0 0;
+	margin: 5% 0 0 0;
 	font-family: loveya;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: #fff;
-	font-weight: 800;
-	letter-spacing: 0.225em;
-	line-height: 1em;
-	margin: 0 0 1em 0;
-	text-transform: uppercase;
-	font-family: cabinBold;
+	font-size: 1.6em;
 }
 
 h1 a,
@@ -2349,7 +2333,7 @@ body.is-menu-visible #menu {
 	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 	transition: transform 0.5s ease, opacity 0.5s ease;
 	display: inline-block;
-	font-size: 1.10em;
+	font-size: 2em;
 	opacity: 1;
 	padding: 0.35em 1em;
 	position: relative;
@@ -2366,7 +2350,7 @@ body.is-menu-visible #menu {
 	-webkit-transition-delay: 0.25s;
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.25s;
-	background: #fff;
+	background: #ffffff;
 	content: '';
 	display: block;
 	height: 2px;
@@ -2387,6 +2371,7 @@ body.is-menu-visible #menu {
 #banner p {
 	letter-spacing: 0.225em;
 	text-transform: uppercase;
+	mar
 }
 
 #banner p a {
@@ -2469,7 +2454,8 @@ body.is-menu-visible #menu {
 	}
 
 	#banner h2 {
-		font-size: 1.25em;
+		font-size: 1.7em;
+		font-weight: 700;
 	}
 
 	#banner br {
@@ -2559,19 +2545,6 @@ body.is-preload #banner:after {
 }
 
 /* Main */
-
-#main>header {
-	padding: 12em 0 10em 0;
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-}
 
 #main>header h2 {
 	font-size: 1.75em;
@@ -2709,18 +2682,45 @@ body.is-mobile #main>header {
 
 }
 
+#main>header {
+	padding: 12em 0 10em 0;
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+
 /* Landing */
 
 body.landing #page-wrapper {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 0;
+} 
+
+
+
+body.is-mobile.landing #banner,
+body.is-mobile.landing .wrapper.style4 {
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body.landing #footer {
@@ -2729,19 +2729,9 @@ body.landing #footer {
 
 body.is-mobile.landing #page-wrapper {
 	background: none;
-}
-
-body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+} */
 
 body.is-mobile.landing #footer {
 	background-color: #1d242a;
 }
+

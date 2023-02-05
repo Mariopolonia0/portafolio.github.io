@@ -1,24 +1,32 @@
-
 body,
 ul{
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
-ol,
 ul {
 	list-style: none;
 }
 
-.section-class {
-	padding: 1%;
-	width: 100%;
-	line-height: 1.1em;
+/*AQUI SE AGREGAN LAS FUENTES */
+@font-face {
+    font-family: loveya;
+    src: url(font/LoveYa.ttf)
 }
+
+@font-face {
+    font-family: cabinRegular;
+    src: url(font/CabinSketch-Regular.ttf)
+}
+
+@font-face {
+    font-family: cabinBold;
+    src: url(font/CabinSketch-Bold.ttf)
+}
+
 
 .img_icon {
 	width: 3.5em;
@@ -176,23 +184,6 @@ tiempoExperiencia {
 	min-width: 0%;
 }
 
-/* Basic */
-
-/*AQUI SE AGREGAN LAS FUENTES */
-@font-face {
-    font-family: loveya;
-    src: url(font/LoveYa.ttf)
-}
-
-@font-face {
-    font-family: cabinRegular;
-    src: url(font/CabinSketch-Regular.ttf)
-}
-
-@font-face {
-    font-family: cabinBold;
-    src: url(font/CabinSketch-Bold.ttf)
-}
 
 body {
 	background:#defdff;
@@ -240,27 +231,11 @@ p {
 	
 }
 
-h2 {
-	font-size: 1.35em;
-	line-height: 1.75em;
-}
-
-@media screen and (max-width: 736px) {
-
-	h2 {
-		font-size: 1.1em;
-		line-height: 1.65em;
-	}
-
-}
-
 /* Section/Article */
-
 section.special,
 article.special {
 	text-align: center;
 }
-
 
 header.major h2 {
 	border-bottom: solid 2px #fff;
@@ -351,15 +326,6 @@ header.major h2 {
 	z-index: 10000;
 }
 
-
-
-#header h1 a {
-	border: 0;
-	display: block;
-	height: inherit;
-	line-height: inherit;
-}
-
 @media screen and (max-width: 736px) {
 
 	#header h1 a {
@@ -368,12 +334,7 @@ header.major h2 {
 
 }
 
-
-
-
-
 /* Banner */
-
 #banner {
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -410,6 +371,7 @@ header.major h2 {
 	padding: 0.35em 1em;
 	position: relative;
 	z-index: 1;
+	font-family: 'cabinRegular';
 }
 
 #banner h2:before,
@@ -462,8 +424,6 @@ header.major h2 {
 	opacity: 0;
 }
 
-
-
 body.is-preload #banner h2 {
 	-moz-transform: scale(0.95);
 	-webkit-transform: scale(0.95);
@@ -483,7 +443,6 @@ body.is-preload #banner:after {
 }
 
 /* Landing */
-
 body.landing #page-wrapper {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
@@ -506,7 +465,6 @@ body.is-mobile.landing .wrapper.style4 {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 
 body.is-mobile.landing #page-wrapper {
 	background: none;

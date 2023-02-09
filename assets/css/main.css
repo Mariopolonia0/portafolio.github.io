@@ -27,7 +27,6 @@ ul {
     src: url(font/CabinSketch-Bold.ttf)
 }
 
-
 .img_icon {
 	width: 3.5em;
     margin-top: 3vw;
@@ -71,8 +70,8 @@ letraContenidoCard {
 }
 
 .img_inicio {
-	width: 90%;
-	border-radius: 15px;
+	width: 80%;
+	border-radius: 10px;
 	box-shadow: 3px 6px 10px rgba(205, 205, 205, 0.735);
 }
 

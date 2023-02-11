@@ -27,6 +27,11 @@ ul {
     src: url(font/CabinSketch-Bold.ttf)
 }
 
+@font-face {
+    font-family: patrickHand;
+    src: url(font/PatrickHand.ttf)
+}
+
 .img_icon {
 	width: 3.5em;
     margin-top: 3vw;
@@ -40,7 +45,8 @@ ul {
 	border-radius: 15px;
 	margin: 3%;
 	border: 1px solid;
-	padding: 1%;
+	padding: 1.2%;
+	background-color: #0115db80;
 }
 
 letraTituloCard {
@@ -94,7 +100,7 @@ letraContenidoCard {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #2e3842;
+	background-color: transparent;
 }
 
 .divTemaExperiencia {
@@ -103,11 +109,11 @@ letraContenidoCard {
 	margin-top: 10px ;
 	padding: 10px;
 	border-radius: 10px;
+	background-color: #0115db80;
 }
 
-
 .img_informacion{
-	width: 10%;
+	width: 4em;
 	padding-right: 3%;
 }
 
@@ -160,7 +166,7 @@ tituloEducacion {
 
 tituloExperiencia {
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 130%;
 	padding: 0vw;
 }
 
@@ -188,20 +194,11 @@ body {
 	background:#defdff;
 }
 
-
 body{
 	color: #fff;
 	font-family: "Open Sans", Helvetica, sans-serif;
 	font-weight: 400;
 	line-height: 1.65em;
-}
-
-@media screen and (max-width: 1680px) {
-
-	body{
-		font-size: 13pt;
-	}
-
 }
 
 @media screen and (max-width: 736px) {
@@ -210,7 +207,6 @@ body{
 		font-size: 11pt;
 		letter-spacing: 0.0375em;
 	}
-
 }
 
 a {
@@ -224,10 +220,9 @@ a {
 }
 
 p {
-	margin: 3% 0 3% 0;
-	font-family: loveya;
-	font-size: 120%;
-	
+	margin: 3% 0% 2em 0%;
+	font-family: 'cabinRegular';
+	font-size: 150%;
 }
 
 /* Section/Article */
@@ -241,6 +236,7 @@ header.major h2 {
 	display: inline-block;
 	padding-bottom: 0.2em;
 	position: relative;
+	margin: 1.4em;
 }
 
 /* Wrapper */
@@ -271,8 +267,8 @@ header.major h2 {
 }
 
 .wrapper.style1 {
-	background-color: #21b2a6;
-	color: #c8ece9;
+	background-color: trasparent;
+	color: #ffffff;
 }
 
 @media screen and (max-width: 736px) {
@@ -284,12 +280,12 @@ header.major h2 {
 }
 
 .wrapper.style2 {
-	background-color: #2e3842;
+	background-color: transparent;
 }
 
 .wrapper.style3 {
-	background-color: #505393;
-	color: #d3d4e4;
+	background-color: transparent;
+	color: #ffffff;
 }
 
 @media screen and (max-width: 980px) {
@@ -297,7 +293,6 @@ header.major h2 {
 	.wrapper {
 		padding: 4em 3em 2em 3em;
 	}
-
 }
 
 @media screen and (max-width: 736px) {
@@ -305,7 +300,6 @@ header.major h2 {
 	.wrapper {
 		padding: 2em 1em 1em 1em;
 	}
-
 }
 
 /* Header */
@@ -370,7 +364,7 @@ header.major h2 {
 	padding: 0.35em 1em;
 	position: relative;
 	z-index: 1;
-	font-family: 'cabinRegular';
+	font-family: 'patrickHand';
 }
 
 #banner h2:before,

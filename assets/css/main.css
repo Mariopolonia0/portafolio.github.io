@@ -45,7 +45,7 @@ ul {
 	border-radius: 15px;
 	margin: 3%;
 	border: 1px solid;
-	padding: 1.2%;
+	padding: 2%;
 	background-color: #0115db80;
 }
 
@@ -57,7 +57,7 @@ letraTituloCard {
 }
 
 .divEstudio {
-	padding: 3%;
+	padding-top: 10%;
 }
 
 letraContenidoCard {
@@ -103,10 +103,23 @@ letraContenidoCard {
 	background-color: transparent;
 }
 
+.fontPerfil{
+	margin: 1.5em; ;
+	line-height: 1.4em;
+	font-size: 148%;
+	font-weight: bold;
+}
+
+.fontCarrera{
+	margin: 1.5em; ;
+	line-height: 1.4em;
+	font-size: 200%;
+}
+
 .divTemaExperiencia {
 	box-shadow: 0px 0px 5px #898fff;
 	text-align: left;
-	margin-top: 10px ;
+	margin: 10px ;
 	padding: 10px;
 	border-radius: 10px;
 	background-color: #0115db80;
@@ -241,11 +254,11 @@ header.major h2 {
 /* Wrapper */
 
 .wrapper {
-	padding: 2em 0 2em 0;
+	padding: 0.2em 15em 0.2em 15em;
 }
 
 .wrapper>.inner {
-	width: 60em;
+	width: 40em;
 	margin: 0 auto;
 }
 
@@ -290,14 +303,14 @@ header.major h2 {
 @media screen and (max-width: 980px) {
 
 	.wrapper {
-		padding: 4em 3em 2em 3em;
+		padding: 1em 10em 1em 10em;
 	}
 }
 
 @media screen and (max-width: 736px) {
 
 	.wrapper {
-		padding: 2em 1em 1em 1em;
+		padding: 1% 1% 1% 1%;
 	}
 }
 

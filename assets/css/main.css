@@ -46,7 +46,7 @@ ul {
 	margin: 3%;
 	border: 1px solid;
 	padding: 2%;
-	background-color: #0115db80;
+	background-color: #0115dbbd;
 }
 
 letraTituloCard {
@@ -60,9 +60,12 @@ letraTituloCard {
 	padding-top: 10%;
 }
 
-letraContenidoCard {
+.letraContenidoCard {
 	color: #fff;
 	font-weight: 200;
+	margin: 0;
+	font-family: math;
+    font-size: 100%;
 }
 
 .divMarginContenidoCard {
@@ -117,12 +120,12 @@ letraContenidoCard {
 }
 
 .divTemaExperiencia {
-	box-shadow: 0px 0px 5px #898fff;
+	box-shadow: 0px 0px 8px #000000;
 	text-align: left;
 	margin: 10px ;
 	padding: 10px;
 	border-radius: 10px;
-	background-color: #0115db80;
+	background-color: #0115dbbd;
 }
 
 .img_informacion{

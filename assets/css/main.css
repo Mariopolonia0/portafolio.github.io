@@ -1,10 +1,19 @@
 body,
-ul{
+ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	color: #fff;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight: 400;
+	line-height: 1.65em
+}
+
+section {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 ul {
@@ -13,28 +22,41 @@ ul {
 
 /*AQUI SE AGREGAN LAS FUENTES */
 @font-face {
-    font-family: loveya;
-    src: url(font/LoveYa.ttf)
+	font-family: loveya;
+	src: url(font/LoveYa.ttf)
 }
 
 @font-face {
-    font-family: cabinRegular;
-    src: url(font/CabinSketch-Regular.ttf)
+	font-family: cabinRegular;
+	src: url(font/CabinSketch-Regular.ttf)
 }
 
 @font-face {
-    font-family: cabinBold;
-    src: url(font/CabinSketch-Bold.ttf)
+	font-family: cabinBold;
+	src: url(font/CabinSketch-Bold.ttf)
 }
 
 @font-face {
-    font-family: patrickHand;
-    src: url(font/PatrickHand.ttf)
+	font-family: patrickHand;
+	src: url(font/PatrickHand.ttf)
+}
+
+.sectionExperiencia {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sectionInformacion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5%;
 }
 
 .img_icon {
 	width: 3.5em;
-    margin-top: 3vw;
+	margin-top: 3vw;
 	padding-left: 3%;
 	padding-right: 3%;
 }
@@ -65,17 +87,24 @@ letraTituloCard {
 	font-weight: 200;
 	margin: 0;
 	font-family: math;
-    font-size: 100%;
+	font-size: 100%;
 }
 
 .divMarginContenidoCard {
 	list-style: disc;
 	margin-left: 11px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 
 .divMarginContenidoCardExperiencia {
 	margin-left: 10px;
 	list-style: disc;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .img_inicio {
@@ -84,37 +113,57 @@ letraTituloCard {
 	box-shadow: 3px 6px 10px rgba(205, 205, 205, 0.735);
 }
 
-.divIconoEnlace{
+.divIconoEnlace {
 	display: flex;
-    grid-gap: 0px;
+	grid-gap: 0px;
 	margin-top: 3px;
 	margin-bottom: 3px;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	align-items: center;
+	justify-content: flex-start;
 }
 
-.img_IconoEnlace{
+.img_IconoEnlace {
 	width: 30px;
-	height:30px ;
+	height: 30px;
 	padding-left: 3%;
+}
+
+.divIcono {
+	align-items: baseline;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.divPrincipal {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: stretch;
 }
 
 .ulTema {
 	list-style-type: none;
-	margin: 0;
+	margin: 1vw;
 	padding: 0;
 	overflow: hidden;
 	background-color: transparent;
 }
 
-.fontPerfil{
-	margin: 1.5em; ;
+.fontPerfil {
+	margin: 1.5em;
 	line-height: 1.4em;
 	font-size: 148%;
 	font-weight: bold;
 }
 
-.fontCarrera{
-	margin: 1.5em; ;
+.fontCarrera {
+	margin: 1.5em;
+
 	line-height: 1.4em;
 	font-size: 200%;
 }
@@ -122,20 +171,23 @@ letraTituloCard {
 .divTemaExperiencia {
 	box-shadow: 0px 0px 8px #000000;
 	text-align: left;
-	margin: 10px ;
-	padding: 10px;
+	margin: 20px;
+	padding: 12px;
 	border-radius: 10px;
 	background-color: #0115dbbd;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
-.img_informacion{
+.img_informacion {
 	width: 4em;
 	padding-right: 3%;
 }
 
 .divTemaInformacion {
 	display: flex;
-    grid-gap: 0px;
+	grid-gap: 0px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	align-items: center;
@@ -143,16 +195,17 @@ letraTituloCard {
 
 .divTemaCV {
 	display: inline-flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .titutloInformacion {
 	width: 100%;
 	height: 100%;
+	text-align: center;
 }
 
-letraInformacion{
+letraInformacion {
 	text-align: left;
 	font-weight: bold;
 }
@@ -204,21 +257,9 @@ tiempoExperiencia {
 	min-width: 0%;
 }
 
-
-body {
-	background:#defdff;
-}
-
-body{
-	color: #fff;
-	font-family: "Open Sans", Helvetica, sans-serif;
-	font-weight: 400;
-	line-height: 1.65em;
-}
-
 @media screen and (max-width: 736px) {
 
-	body{
+	body {
 		font-size: 11pt;
 		letter-spacing: 0.0375em;
 	}
@@ -229,7 +270,7 @@ a {
 	-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 	-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 	transition: color 0.2s ease, border-bottom-color 0.2s ease;
-	
+
 	color: inherit;
 	text-decoration: none;
 }
@@ -244,6 +285,7 @@ p {
 section.special,
 article.special {
 	text-align: center;
+	flex-direction: column;
 }
 
 header.major h2 {
@@ -254,23 +296,22 @@ header.major h2 {
 	margin: 1.4em;
 }
 
-/* Wrapper */
-
-.wrapper {
-	padding: 0.2em 15em 0.2em 15em;
+.wrapper>.inner {
+	width: 50em;
+	margin: 10% auto;
 }
 
-.wrapper>.inner {
-	width: 40em;
+.sectionExperiencia>.inner {
+	width: 30em;
 	margin: 0 auto;
+	display: contents;
 }
 
 @media screen and (max-width: 1280px) {
 
 	.wrapper>.inner {
-		width: 90%;
+		width: 50%;
 	}
-
 }
 
 @media screen and (max-width: 980px) {
@@ -281,39 +322,25 @@ header.major h2 {
 
 }
 
-.wrapper.style1 {
-	background-color: trasparent;
-	color: #ffffff;
-}
+@media screen and (min-width: 980px) {
 
-@media screen and (max-width: 736px) {
-
-	.wrapper.style1 .features li {
-		border-top-color: rgba(0, 0, 0, 0.125);
-	}
-
-}
-
-.wrapper.style2 {
-	background-color: transparent;
-}
-
-.wrapper.style3 {
-	background-color: transparent;
-	color: #ffffff;
-}
-
-@media screen and (max-width: 980px) {
-
-	.wrapper {
-		padding: 1em 10em 1em 10em;
+	.tarjeta {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+		border-radius: 15px;
+		margin: 3%;
+		border: 1px solid;
+		padding: 2%;
+		background-color: #0115dbbd;
 	}
 }
 
-@media screen and (max-width: 736px) {
+
+@media screen and (max-width: 1300px) {
 
 	.wrapper {
 		padding: 1% 1% 1% 1%;
+		display: flex;
 	}
 }
 
@@ -451,7 +478,8 @@ body.is-preload #banner:after {
 }
 
 /* Landing */
-body.landing #page-wrapper {
+body.landing {
+	display: block;
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
@@ -461,7 +489,7 @@ body.landing #page-wrapper {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 0;
-} 
+}
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
@@ -476,7 +504,7 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #page-wrapper {
 	background: none;
-} 
+}
 
 body.is-mobile.landing #footer {
 	background-color: #1d242a;

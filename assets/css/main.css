@@ -21,10 +21,6 @@ ul {
 }
 
 /*AQUI SE AGREGAN LAS FUENTES */
-@font-face {
-	font-family: loveya;
-	src: url(font/LoveYa.ttf)
-}
 
 @font-face {
 	font-family: cabinRegular;
@@ -41,6 +37,11 @@ ul {
 	src: url(font/PatrickHand.ttf)
 }
 
+@font-face {
+	font-family: righteous;
+	src: url(font/Righteous.ttf)
+}
+
 .sectionExperiencia {
 	display: flex;
 	flex-direction: column;
@@ -55,8 +56,8 @@ ul {
 }
 
 .img_icon {
-	width: 3.5em;
-	margin-top: 3vw;
+	width: 15%;
+	margin-top: 3%;
 	padding-left: 3%;
 	padding-right: 3%;
 }
@@ -156,14 +157,16 @@ letraTituloCard {
 
 .fontPerfil {
 	margin: 1.5em;
-	line-height: 1.4em;
-	font-size: 148%;
-	font-weight: bold;
+	line-height: 1.5em;
+	font-size: 150%;
+	font-weight: 600;
+	font-family: cursive;
+	letter-spacing: 0.10em;
 }
 
 .fontCarrera {
 	margin: 1.5em;
-
+	font-family: 'cabinBold';
 	line-height: 1.4em;
 	font-size: 200%;
 }
@@ -227,9 +230,11 @@ letraInformacion {
 	text-align: center;
 }
 
-tituloEducacion {
+.tituloEducacion {
 	font-weight: 600;
 	font-size: 125%;
+	margin: 0;
+	font-family: 'cursive';
 }
 
 tituloExperiencia {
@@ -277,7 +282,7 @@ a {
 
 p {
 	margin: 3% 0% 2em 0%;
-	font-family: 'cabinRegular';
+	font-family: '';
 	font-size: 150%;
 }
 
@@ -467,10 +472,7 @@ body.is-preload #banner h2 {
 	opacity: 0;
 }
 
-body.is-preload #banner h2:before,
-body.is-preload #banner h2:after {
-	width: 0;
-}
+
 
 
 body.is-preload #banner:after {
@@ -480,26 +482,12 @@ body.is-preload #banner:after {
 /* Landing */
 body.landing {
 	display: block;
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
+	background-image: -webkit-linear-gradient(top, rgb(0 0 0 / 55%), rgb(0 0 0 / 63%)), url(../../images/fondo.png);
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	padding-top: 0;
-}
-
-body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/fondo.png");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 body.is-mobile.landing #page-wrapper {

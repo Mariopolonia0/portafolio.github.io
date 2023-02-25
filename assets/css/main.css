@@ -464,6 +464,7 @@ header.major h2 {
 	opacity: 0;
 }
 
+/*animacion de las dos linea*/
 body.is-preload #banner h2 {
 	-moz-transform: scale(0.95);
 	-webkit-transform: scale(0.95);
@@ -472,6 +473,11 @@ body.is-preload #banner h2 {
 	opacity: 0;
 }
 
+
+body.is-preload #banner h2:before,
+body.is-preload #banner h2:after {
+	width: 0;
+}
 
 body.is-preload #banner:after {
 	opacity: 300;

@@ -153,6 +153,7 @@ letraTituloCard {
 
 .divNombre {
 	align-items: center;
+	margin: 5% 0%;
 }
 
 .ulTema {
@@ -173,7 +174,7 @@ letraTituloCard {
 }
 
 .fontCarrera {
-	margin: 1.5em;
+	margin: 0em;
 	font-family: 'cabinBold';
 	line-height: 1.4em;
 	font-size: 200%;
@@ -194,11 +195,13 @@ letraTituloCard {
 .img_informacion {
 	width: 4em;
 	padding-right: 3%;
+	
 }
 
 .divTemaInformacion {
 	display: flex;
 	align-items: center;
+	margin: 10% 0%;
 }
 
 .divTemaCV {
